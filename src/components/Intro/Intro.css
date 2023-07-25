@@ -1,0 +1,65 @@
+/* IntroSection.css */
+
+.intro-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 600px; 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .intro-content {
+    position: absolute;
+    top: 50%;
+    left: 5%; 
+    transform: translateY(-50%);
+    color: white;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(28, 86, 212);
+  }
+  @media (max-width: 768px) {
+    .intro-section {
+      height: auto;
+    }
+  
+    .background-image {
+      height: 200px; 
+    }
+  
+    .intro-content {
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  }
